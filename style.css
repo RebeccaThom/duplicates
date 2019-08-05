@@ -1,0 +1,10 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid red;
+}
+html, body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
