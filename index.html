@@ -29,36 +29,6 @@ var duplicates = input.reduce(function(acc, el, i, arr) {
 
 document.write(duplicates); // = 1,3 (actual array == [1, 3])
 
-$('tr').each(function() {
-
-    $(this).find('td').each(function(i) {
-
-    if(values[i].indexOf($(this).text()) > -1) {
-          $(this).addClass('duplicate');
-    }
-
-    values[i].push($(this).text());          
-    });
-
-});
-$(function() {
-   var el = {};
-   $("table tr").each(function() {
-        // get row
-        var row = $(this);
-        // get first and second td
-        var first = row.find('td:first-child').val();
-        var second = row.find('td:nth-child(2)').val();
-        // if exists, remove the tr
-        if(el[first + second]) {
-            $(this).remove())
-        }
-        else {
-            // if it does not exist, add it with some random val
-            el[first + second] = 1;
-        }
-   });
-});
 
 altText = $('tr td:nth-child(2)').toArray()
 
@@ -71,4 +41,7 @@ duplicates = altTxtArray.reduce(function(acc, el, i, arr) {
   return acc;
 }, 
 []);
+------------------------------------------------------------------
+
+
 -->
